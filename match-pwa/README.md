@@ -13,3 +13,7 @@ Create `.env` file (or copy from `.env.example`) and set:
 ## Notes
 - PWA is enabled via `vite-plugin-pwa` (autoUpdate).
 - This structure is ready to grow by adding pages in `src/pages/*` and shared UI in `src/shared/ui`.
+
+
+## CodeSandbox
+This project listens on `process.env.PORT` (default 3000) which fixes 502 errors in CodeSandbox.
