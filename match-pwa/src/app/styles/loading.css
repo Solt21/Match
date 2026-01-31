@@ -1,11 +1,10 @@
-.loading{
+ .loading{
   height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
   background:#fff;
 }
-
 .logo{
   display:flex;
   flex-direction:column;
@@ -15,7 +14,6 @@
   font-size:16px;
   color:#b44cff;
 }
-
 .heart{
   width:42px;
   height:36px;
@@ -23,9 +21,4 @@
   clip-path:path("M21 36C21 36 0 23 0 11C0 4 5 0 11 0C16 0 19 3 21 6C23 3 26 0 31 0C37 0 42 4 42 11C42 23 21 36 21 36Z");
   animation:pulse 1.2s ease-in-out infinite;
 }
-
-@keyframes pulse{
-  0%{transform:scale(1);opacity:1}
-  50%{transform:scale(1.08);opacity:.85}
-  100%{transform:scale(1);opacity:1}
-}
+@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.85}100%{transform:scale(1);opacity:1}}

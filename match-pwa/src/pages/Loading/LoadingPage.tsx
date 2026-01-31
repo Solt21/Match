@@ -5,9 +5,7 @@ export function LoadingPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const t = setTimeout(() => {
-      navigate("/welcome", { replace: true });
-    }, 1500);
+    const t = setTimeout(() => navigate("/welcome", { replace: true }), 1200);
     return () => clearTimeout(t);
   }, [navigate]);
 

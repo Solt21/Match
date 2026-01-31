@@ -5,18 +5,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import App from "./app/App";
 import "./app/styles/global.css";
 
-console.info("[Match] app booted");
-
 const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: 1,
-      refetchOnWindowFocus: false
-    }
-  }
+  defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: false } }
 });
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
