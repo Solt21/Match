@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --strictPort",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
-    "start": "vite"
+    "preview": "vite preview --strictPort",
+    "start": "vite --strictPort"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.59.0",
